@@ -15,9 +15,7 @@ bool isPrime(ull n)
      // check if n is even (duh)
      if (n == 2)
           return true;
-     if (n % 2 == 0)
-          return true;
-     if (n == 0 || n == 1)
+     if (n % 2 == 0 || n == 0 || n == 1)
           return false;
      
      while (d % 2 == 0)
@@ -26,7 +24,7 @@ bool isPrime(ull n)
           s++;
      }
      
-     for (int k = 0; k < 100; k++)
+     for (int k = 0; k < 30; k++)
      {
           // witness a is chosen between 2 and n-2
           a = rand() % (n - 4) + 2;
